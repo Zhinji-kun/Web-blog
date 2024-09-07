@@ -1,0 +1,129 @@
+@font-face {
+    font-family: happymonkey;
+    src: url(font/HappyMonkey-Regular.ttf);
+}
+
+body{
+    font-family: happymonkey;
+    background-color: rgb(10, 132, 238);
+    color: #080808;
+    margin: 0;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 5px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.image-container {
+    max-width: 800px;
+    margin: 0 0 20px 20px;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(255, 69, 0, 0.8), rgba(255, 165, 0, 0.8));
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+nav ul li a:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h3 {
+    color: #003366;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
